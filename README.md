@@ -41,9 +41,18 @@ and adding
 
 before importing it.
 
-Biblib can also be installed system-wide with
+I.e. in a python session, run
 
-    python3 setup.py install
+    import sys
+    sys.path.insert(0,"[PATH-TO]/biblib-main/")
+    import biblib.bib as bbl
+
+Alternatively, to permanently add biblib to your PYTHONPATH (loaded into sys.path each time you start a python session), 
+run the following in a shell terminal
+
+    export PYTHONPATH="${PYTHONPATH}:[PATH-TO]/biblib-main"
+
+In both cases, replace [PATH-TO] with the path on your computer, where you downloaded/cloned biblib to.
 
 
 Examples
